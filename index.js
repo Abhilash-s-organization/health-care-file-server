@@ -1,18 +1,10 @@
 const express = require('express');
 const uploadroutes = require('./routes/routes');
 
-//const upload = multer({dest:'uploads/'});
 
 const app = express();
 
-app.use('/api/upload', uploadroutes)
-
-//(req,res)=>{
-//     if (!req.files || req.files.length === 0) {
-//    return res.status(400).json({ error: 'No files were uploaded' });
-//  }
-//    res.json(req.files);
-//}
+app.use('/api/upload', uploadroutes);
 
 
 
