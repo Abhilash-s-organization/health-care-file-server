@@ -1,7 +1,7 @@
 const request = require('supertest');
 const fs = require('fs');
 const path = require('path');
-const app = require('./files_server'); 
+const app = require('./index'); 
 
 const testFilePath = path.join(__dirname, 'testfile.txt');
 
